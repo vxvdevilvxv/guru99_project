@@ -34,9 +34,9 @@ def test_auth_form(url, is_valid=False, **kwargs):
                 curr_title = browser.find_element_by_css_selector('head title').get_attribute('innerHTML')
 
                 if curr_title.strip() in test_data['expect_title']:
-                    print('Test case: Passed')
+                    print('Test case 1: Passed')
                 else:
-                    print('Test case: Failed')
+                    print('Test case 1: Failed')
 
         except Exception as ex:
             print(ex)
